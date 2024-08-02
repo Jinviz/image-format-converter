@@ -4,15 +4,12 @@ import { saveAs } from 'file-saver';
 
 function App() {
   const [files, setFiles] = useState([]);
-  const [count, setCount] = useState(0)
 
   const handleFileChange = (e) => {
     setFiles(e.target.files);
   };
 
   const convertImageToPNG = (file) => {
-    setCount(count => count + 1);
-    console.log('convertImageToPNG ', count)
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
       reader.readAsDataURL(file);
