@@ -1,7 +1,6 @@
 import React from 'react'
 
 const FormatSelect = ({format, setFormat}) => {
-
     const handleChange = (e) =>{
         setFormat(e.target.value)
     }
@@ -23,5 +22,4 @@ const FormatSelect = ({format, setFormat}) => {
         </div>
     )
 }
-
 export default FormatSelect
