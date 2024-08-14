@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {PulseBtn} from '../style/button/PulseBtn'
+import PulseBtn from '../style/button/PulseBtn.css'
 import FileSelect from './FileSelect'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
